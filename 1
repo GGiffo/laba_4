@@ -1,0 +1,16 @@
+program lab_4;
+var x,y,e,p,q:real;
+begin
+    writeln('Введите e = ');
+    readln(e);
+    
+    x := 0.23;
+    p := 1.3;
+    q := 4.1;
+    
+        while x <= 2.2 do begin 
+            y := abs(sqr(cos(q * x))) * exp(-p * x);
+            writeln('x=', x:5:2, 'y=', y:5:2);
+            x := x + 0.23;
+        end; 
+end.
